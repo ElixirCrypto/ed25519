@@ -13,6 +13,38 @@ defmodule Ed25519 do
 
   """
   def hello do
-    :world
+    Curve25519.hello
+  end
+
+  def generate do
+    IO.puts("generate keypair")
+  end
+
+  def generate_secret_key do
+    IO.puts("generate secret key")
+  end
+
+  def generate_public_key do
+    IO.puts("generate public_key by secret key")
+  end
+
+  def sign do
+    IO.puts("sign message")
+  end
+
+  def verify do
+    IO.puts("verify sign")
+  end
+
+  def parse_secret_key do
+    IO.puts("parse secret key from hex string")
+  end
+
+  def parse_public_key do
+    IO.puts("parse public key from hex string")
+  end
+
+  def to_string do
+    IO.puts("deparse public & secret to hex string")
   end
 end
